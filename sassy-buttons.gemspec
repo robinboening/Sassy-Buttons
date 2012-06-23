@@ -1,26 +1,18 @@
-Gem::Specification.new do |s|
-  # Release Specific Information
-  s.version = "0.1.1"
-  s.date = "2012-6-23"
+# -*- encoding: utf-8 -*-
 
-  # Gem Details
+Gem::Specification.new do |s|
   s.name = "sassy-buttons"
+  s.version = "0.1.1"
+
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jared Hardy"]
-  s.summary = "css only buttons extension for compass"
+  s.date = "2012-06-23"
   s.description = "Sassy css3 buttons using compass"
   s.email = "jared@jaredhardy.com"
   s.homepage = "http://www.jaredhardy.com"
-
-  # Gem Files
-  s.files = %w(README.mkdn)
-  s.files += Dir.glob("lib/**/*.*")
-  s.files += Dir.glob("stylesheets/**/*.*")
-  s.files += Dir.glob("templates/**/*.*")
-
-  # Gem Bookkeeping
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.summary = "css only buttons extension for compass"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
