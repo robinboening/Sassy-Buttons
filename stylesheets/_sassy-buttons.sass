@@ -58,7 +58,8 @@ $sb-ie-support: true !default
 @mixin sassy-button($gradient-style: $sb-gradient-style, $border-radius: $sb-border-radius, $font-size: $sb-font-size, $first-color: $sb-base-color, $second-color: $sb-second-color, $text-color:$sb-text-color, $text-style: $sb-text-style, $auto-states: $sb-pseudo-states, $ie: $sb-ie-support)
   @include sassy-button-structure($border-radius, $font-size, $sb-padding)
   @include sassy-button-gradient($gradient-style, $first-color, $second-color, $text-color, $text-style, $auto-states, $ie)
-  @include firefox-fix
+  @include sassy-firefox-fix
+
 
 
 // Structure for a sassy button
@@ -69,8 +70,8 @@ $sb-ie-support: true !default
   @include border-radius($border-radius)
 
 
-// Firefox button padding fix
-@mixin firefox-fix
-  &::-moz-focus-inner, &::-moz-focus-inner, &::-moz-focus-inner, &::-moz-focus-inner
+// Fix for the Firefox padding issue
+@mixin sassy-firefox-fix
+  &::-moz-focus-inner
     padding: 0 !important
-    border: 0 none !important
+    margin: -1px !important
