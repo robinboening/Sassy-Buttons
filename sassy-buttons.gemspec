@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   # Release Specific Information
-  s.date = "2012-06-23"
   s.version = "0.1.1"
+  s.date = "2012-6-23"
 
   # Gem Details
   s.name = "sassy-buttons"
