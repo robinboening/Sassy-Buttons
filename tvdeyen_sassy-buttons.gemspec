@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jared Hardy", "Thomas von Deyen"]
   s.date = "2012-08-06"
-  s.description = "Sassy css3 buttons using compass"
+  s.description = "Cross browser sassy css3 buttons using compass"
   s.email = "tvdeyen@gmail.com"
   s.homepage = "https://github.com/tvdeyen/Sassy-Buttons"
   s.require_paths = ["lib"]
